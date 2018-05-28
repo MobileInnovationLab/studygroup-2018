@@ -36,7 +36,8 @@ Daftar Library dan Dokumentasi untuk memanggil API dari Android :
 - Volley : https://www.androidtutorialpoint.com/networking/android-volley-tutorial/
 
 ### 4. Pembuatan Database SQL, API dan Firebase
-- Pengenalan SQL database dan Firebase
+- Pengenalan SQL database dan Firebase 
+
 Database SQL akan memiliki struktur berbentuk tabel, setiap tabel akan punya relasi dengan tabel lain(agregasi, komposisi dll)
 ![alt text](https://i.stack.imgur.com/PsMH8.jpg)
 
