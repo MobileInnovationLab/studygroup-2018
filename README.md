@@ -12,10 +12,15 @@ Buku Praktik Android Google
 - Pengenalan Github
 Penggunaan singkat Github : 
 Git init //buat ngasi tau kalau ini repo github
+
 Git add . // Buat ngeupload semua file
+
 Git commit -m "pesan kamu" //buat ngasih pesan ke tiap file yg akan km.upload
+
 Git remote add origin #link repo# //buat ngasi tau upload file nya ke repository mana
+
 Git push origin //buat push ato upload ke repository pakai remote yg udah kamu buat barusan
+
 
 Course online Java dan OOP : https://www.codecademy.com/learn/learn-java
 
