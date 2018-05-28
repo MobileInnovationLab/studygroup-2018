@@ -1,5 +1,10 @@
 # Mobile Developer Study Group Summary
 
+### Latihan Dasar Android
+Buku Praktik Android Google
+[click here](https://google-developer-training.gitbooks.io/android-developer-fundamentals-course-practicals/content/idn/)
+
+
 ### 1. Pengenalan Java, Android Studio, XML dan Github
 - Pengenalan syntax Java dan konsep Object Oriented Programming
 - Struktur File Android Studio
@@ -39,6 +44,7 @@ Daftar Library dan Dokumentasi untuk memanggil API dari Android :
 - Pengenalan SQL database dan Firebase 
 
 Database SQL akan memiliki struktur berbentuk tabel, setiap tabel akan punya relasi dengan tabel lain(agregasi, komposisi dll)
+
 ![alt text](https://i.stack.imgur.com/PsMH8.jpg)
 
 Course online SQL : https://www.codecademy.com/learn/learn-sql
