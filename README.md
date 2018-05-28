@@ -1,11 +1,18 @@
 # Mobile Developer Study Group Summary
 
-### 1. Pengenalan Java, Android Studio dan XML
+### 1. Pengenalan Java, Android Studio, XML dan Github
 - Pengenalan syntax Java dan konsep Object Oriented Programming
 - Struktur File Android Studio
 - Pengenalan syntax XML dan implementasi LinearLayout
+- Pengenalan Github
+Penggunaan singkat Github : 
+Git init //buat ngasi tau kalau ini repo github
+Git add . // Buat ngeupload semua file
+Git commit -m "pesan kamu" //buat ngasih pesan ke tiap file yg akan km.upload
+Git remote add origin #link repo# //buat ngasi tau upload file nya ke repository mana
+Git push origin //buat push ato upload ke repository pakai remote yg udah kamu buat barusan
 
-Course online : https://www.codecademy.com/learn/learn-java
+Course online Java dan OOP : https://www.codecademy.com/learn/learn-java
 
 ### 2. Pengenalan Android Lifecycle dan Implementasi Bottom Navigation Bar
 - Pengenalan Android Lifecycle
@@ -38,7 +45,7 @@ Course online SQL : https://www.codecademy.com/learn/learn-sql
 Database di Firebase akan memiliki struktur seperti Tree/Object
 ![alt text](https://i.stack.imgur.com/aWYFt.png)
 
-Suggestion : Firebase lebih simple dan mudah, pelajari dokumentasinya di : https://firebase.google.com/docs/android/setup
+Suggestion : **Firebase lebih simple dan mudah, pelajari dokumentasinya di : https://firebase.google.com/docs/android/setup**
 
 - Pengenalan API
 Referensi : https://www.codepolitan.com/mengenal-apa-itu-web-api-5a0c2855799c8
