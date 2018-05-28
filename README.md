@@ -10,7 +10,9 @@ Buku Praktik Android Google
 - Struktur File Android Studio
 - Pengenalan syntax XML dan implementasi LinearLayout
 - Pengenalan Github
+
 Penggunaan singkat Github : 
+
 Git init //buat ngasi tau kalau ini repo github
 
 Git add . // Buat ngeupload semua file
