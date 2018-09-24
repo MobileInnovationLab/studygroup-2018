@@ -105,7 +105,7 @@ g. Menggunakan warna dalam values/colors.xml sebagai contoh, tambahkan sumber da
 <color name="myBackgroundColor">#FFF043</color>
 ```
 
-### Challange
+### Challange 1
 Lanjutkan pekerjaan anda yang sebelumnya, dan buatlah tampilan agar mirip seperti dibawah
 ![alt text](https://google-developer-training.gitbooks.io/android-developer-fundamentals-course-practicals/content/images/1_2A_P_images/dg_weight_gravity.png)
 
@@ -115,6 +115,15 @@ Lanjutkan pekerjaan anda yang sebelumnya, dan buatlah tampilan agar mirip sepert
 2. android:atribut layout_weight menunjukkan berapa banyak ruang ekstra dalam LinearLayout yang akan dialokasikan ke tampilan yang sudah menyetel parameter ini. Jika hanya satu tampilan yang memiliki atribut ini, tampilan itu akan mendapatkan semua ruang layar ekstra. Untuk beberapa tampilan, ruangan dipro-rata. Misalnya, jika kedua tombol memiliki berat 1 dan tampilan teks memiliki berat 2, sehingga totalnya 4, masing-masing tombol mendapatkan ¼ ruang, dan tampilan teks mendapatkan setengah.
 
 3. Android:atribut gravity menentukan perataan konten Tampilan di dalam Tampilan itu sendiri. Kounter dipusatkan dalam tampilannya dengan: android:gravity="center"
+
+
+### Challange 2
+Cobalah ubah layout yang kalian gunakan menjadi Constraint Layout
+
+
+![alt text](https://google-developer-training.gitbooks.io/android-developer-fundamentals-course-practicals/content/images/1_2B_P_images/as_layout_constraint3_drag_constraint.png)
+
+**Hint** Cobalah bereksperimen dengan titik-titik pembatas pada setiap elemen, setiap elemen harus memiliki **minimal 1 titik horizontal dan 1 titik vertikal yang terhubung** ke elemen lain agar posisinya di render dengan baik
 
 
 
@@ -160,7 +169,7 @@ Buat 2 fungsi
    }
 ```
 
-### Challange
+### Challange 3
 1. Isilah fungsi countUp dan showToast.
 fungsi countUp akan mengambil nilai dari textview lalu mengincrement nilai tersebut dan kemudian melakukan set ulang nilai yang baru
 ke textview
@@ -172,3 +181,5 @@ Gunakan
     Toast toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_LONG;);
     toast.show();
 ```
+
+
