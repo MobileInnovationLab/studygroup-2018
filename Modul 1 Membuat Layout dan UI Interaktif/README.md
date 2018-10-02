@@ -177,9 +177,10 @@ ke textview
 fungsi showToast akan menunjukkan popup kecil yang menyatakan "Hello, Toast"  
 **Hint**     
 Gunakan   
-```
+```java
     Toast toast = Toast.makeText(this, R.string.toast_message, Toast.LENGTH_LONG;);
     toast.show();
 ```
+
 
 
