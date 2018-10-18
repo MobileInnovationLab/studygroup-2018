@@ -335,15 +335,15 @@ implementation 'com.squareup.picasso:picasso:2.71828'
 
 ```
 **P.S : 
-`Picasso.get()` digunakan untuk mengambil gambar
-`load(url)` digunakan untuk mengambil gambar dari website
-`fit()` digunakan agar gambar sesuai dengan ukuran widget ImageView
-`centerCrop()` digunakan untuk memotong gambar agar sesuai dengan ukuran widget ImageView
-`into(imageView)` digunakan untuk memasukkan gambar ke imageView**
+a. `Picasso.get()` digunakan untuk mengambil gambar
+b. `load(url)` digunakan untuk mengambil gambar dari website
+c. `fit()` digunakan agar gambar sesuai dengan ukuran widget ImageView
+d. `centerCrop()` digunakan untuk memotong gambar agar sesuai dengan ukuran widget ImageView
+e. `into(imageView)` digunakan untuk memasukkan gambar ke imageView**
+
 3. Tambahkan Permission pada `AndroidManifests` : 
 ```
 <uses-permission android:name="android.permission.INTERNET"/>
 ```
 4. Jalankan dan lihat hasilnya.
-
 
