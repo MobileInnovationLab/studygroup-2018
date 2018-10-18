@@ -6,7 +6,7 @@ Dalam Focus Group kali ini kalian akan mempelajari :
 2. Menampilkan Dialog untuk memberikan feedback kepada pengguna dengan custom design.
 3. Mengimplementasikan Cardview kedalam RecyclerView.`
 
-### PART 1 : Menerapkan Spinner
+### PART 1 : Widget Spinner
 Dalam praktik ini kalian akan mempelajari cara menerapkan spinner widget kedalam sebuah layout.
 
 #### 1. Membuat Layout dengan Spinner
@@ -104,3 +104,96 @@ public void onNothingSelected(AdapterView<?> adapterView) {
 4. Jalankan dan lihat hasilnya seperti berikut :
 ![alt text](https://google-developer-training.gitbooks.io/android-developer-fundamentals-course-practicals/content/images/4_1_P_images/dg_spinner_composite.png)
 
+
+### PART 2 : Default Dialog dan Custom Dialog
+Kelas builder biasanya merupakan kelas member statis dari kelas yang dibangunnya. Anda menggunakan **AlertDialog.Builder** untuk membangun dialog peringatan standar, menggunakan `setTitle` untuk menyetel judulnya, `setMessage` untuk menyetel pesannya, dan `setPositiveButton` dan `setNegativeButton` untuk menyetel tombolnya.
+#### 1. Menampilkan default Alert Dialog
+1. Pada bagian ini kalian akan membuat aplikasi seperti berikut ini : 
+![alt text](https://google-developer-training.gitbooks.io/android-developer-fundamentals-course-practicals/content/images/4_1_P_images/dg_alert_test_composite.png)
+
+Untuk memulainya bualah terlebih dahulu activity baru dengan nama **AlertTest.java**
+2. Tambahkan metode `onClickShowAlert()` ke **MainActivity.java** seperti berikut:
+```java
+public void onClickShowAlert(View view) {
+  AlertDialog.Builder myAlertBuilder = new
+                AlertDialog.Builder(MainActivity.this);
+```
+3. Setel judul dan pesan untuk dialog peringatan dalam `onClickShowAlert()` setel kode di langkah sebelumnya:
+```java
+...
+// Set the dialog title.
+myAlertBuilder.setTitle("Alert");
+// Set the dialog message.
+myAlertBuilder.setMessage("Click OK to continue, or Cancel to stop:");
+...
+```
+4. Ekstrak judul dan pesan ke dalam sumber daya string. Baris kode sebelumnya sekarang seharusnya menjadi:
+```java
+...
+// Set the dialog title.
+myAlertBuilder.setTitle(R.string.alert_title);
+// Set the dialog message.
+myAlertBuilder.setMessage(R.string.alert_message);
+... 
+```
+5. Tambahkan tombol **OK** pada peringatan dengan ``setPositiveButton()`` dan menggunakan ``onClickListener()``:
+```java
+...
+// Add the buttons.
+myAlertBuilder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+     public void onClick(DialogInterface dialog, int which) {
+          // User clicked OK button.
+          Toast.makeText(getApplicationContext(), "Pressed OK",
+                  Toast.LENGTH_SHORT).show();
+     }
+});
+...
+```
+6. Ekstrak sumber daya string untuk "**OK**" dan untuk "**Pressed OK**". Pernyataan sekarang seharusnya menjadi:
+```java
+...
+// Add the buttons.
+myAlertBuilder.setPositiveButton(R.string.ok, new
+                      DialogInterface.OnClickListener() {
+     public void onClick(DialogInterface dialog, int which) {
+         // User clicked OK button.
+         Toast.makeText(getApplicationContext(), R.string.pressed_ok,
+                      Toast.LENGTH_SHORT).show();
+     }
+});
+...
+```
+7. Tambahkan tombol Cancel pada peringatan dengan ``setNegativeButton()`` dan ``onClickListener()``, tampilkan pesan toast jika tombol diklik, lalu batalkan dialog:
+```java
+...
+myAlertBuilder.setNegativeButton("Cancel", new      
+                       DialogInterface.OnClickListener() {
+     public void onClick(DialogInterface dialog, int which) {
+          // User cancelled the dialog.
+          Toast.makeText(getApplicationContext(), "Pressed Cancel",
+                       Toast.LENGTH_SHORT).show();
+     }
+});
+...
+```
+8. Ekstrak sumber daya string untuk "**Cancel**" dan "**Pressed Cancel**". Pernyataan sekarang seharusnya menjadi:
+```java
+...
+myAlertBuilder.setNegativeButton(R.string.cancel, new
+                       DialogInterface.OnClickListener() {
+     public void onClick(DialogInterface dialog, int which) {
+         // User cancelled the dialog.
+         Toast.makeText(getApplicationContext(), R.string.pressed_cancel,
+                       Toast.LENGTH_SHORT).show();
+     }
+});
+...
+```
+9. Tambahkan ``show()`` yang membuat lalu menampilkan dialog peringatan, ke akhir `onClickShowAlert()`:
+```java
+  ...
+  // Create and show the AlertDialog.
+  myAlertBuilder.show();
+}
+```
+10. Jalankan dan lihat hasilnya.
