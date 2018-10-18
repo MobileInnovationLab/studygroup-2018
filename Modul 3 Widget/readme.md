@@ -345,6 +345,7 @@ implementation 'com.squareup.picasso:picasso:2.71828'
 
 **e. `into(imageView)` digunakan untuk memasukkan gambar ke imageView**
 
+
 3. Tambahkan Permission pada `AndroidManifests` : 
 ```
 <uses-permission android:name="android.permission.INTERNET"/>
@@ -357,9 +358,13 @@ Buatlah aplikasi android dengan menggunakan Cardview dan Recyclerview seperti be
 ![alt text](https://preview.ibb.co/dzF0i0/photo-2018-10-18-21-10-05.jpg)
 
 **P.S:**
+
 **1. Class Recycler view terdiri dari Activity, Model, Adapter, dan ViewHolder**
+
 **2. layout Recycler view terdiri dari Activity dan Row(baris)**
-**3. bagian yang perlu di set pada recycler view yaitu layoutmanager dan adapter.
-**4. untuk penerapan picasso dapat dilakukan pada method yang menerima setiap perubahan data pada Adapter.
+
+**3. bagian yang perlu di set pada recycler view yaitu layoutmanager dan adapter.**
+
+**4. untuk penerapan picasso dapat dilakukan pada method yang menerima setiap perubahan data pada Adapter.**
 
 GOOD LUCK :)
