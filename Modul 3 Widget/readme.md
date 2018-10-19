@@ -95,6 +95,21 @@ public void onItemSelected(AdapterView<?> adapterView, View view, int
    showText(view);
 }
 ```
+
+Untuk Source Code ShowText seperti berikut : 
+```java
+public void showText(View view) {
+        EditText editText = (EditText) findViewById(R.id.et_spinner_phone);
+        if (editText != null) {
+            // Assign to showString both the entered string and mSpinnerLabel.
+            String showString = (editText.getText().toString() + " - " + mSpinnerLabel);
+            // Assign to phoneNumberResult the view for text_phonelabel to prepare to show it.
+            TextView phoneNumberResult = (TextView) findViewById(R.id.tv_spinner_value);
+            // Show the showString in the phoneNumberResult.
+            if (phoneNumberResult != null) phoneNumberResult.setText(showString);
+        }
+    }
+```
 3. Tambahkan kode ke metode callback ``onNothingSelected()`` yang kosong, seperti yang ditampilkan di bawah ini, untuk menampilkan pesan logcat jika tidak satu pun yang dipilih:
 ```java
 public void onNothingSelected(AdapterView<?> adapterView) {
