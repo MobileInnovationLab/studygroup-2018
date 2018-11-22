@@ -102,12 +102,12 @@ public class Resep {
 
 #### 1.4. Membuat adapter list
 1. Buka app.gradle(Module:app) kalian kembali, dan tambahkan dependecy Picasso seperti dibawah  
-Picasso akan kita gunakan untuk load gambar dari internet
+Picasso akan kalian gunakan untuk load gambar dari internet
 ```java
     implementation 'com.squareup.picasso:picasso:2.71828'
 ```
 
-2. Buka file Androidmanifest.xml kalian, tambahkan kode dibawah agar aplikasi kita diberi permission untuk mengakses internet, letakkan kode di atas tag pembuka <application>
+2. Buka file Androidmanifest.xml kalian, tambahkan kode dibawah agar aplikasi kalian diberi permission untuk mengakses internet, letakkan kode di atas tag pembuka <application>
 ```xml
     <uses-permission android:name="android.permission.INTERNET" />
 ```
@@ -170,7 +170,7 @@ public class ResepAdapter extends RecyclerView.Adapter<ResepAdapter.ViewHolder> 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
 ```
 
-2. Buat sebuah data dummy untuk memastikan kode yang telah kita buat benar
+2. Buat sebuah data dummy untuk memastikan kode yang telah kalian buat benar
 ```java
     private void loadData(){
         Resep resep = new Resep("https://img-global.cpcdn.com/003_recipes/7ac31bcd8b05a075/751x532cq70/photo.jpg", "Pelecing Kangkung", "100 Calories");
@@ -289,7 +289,7 @@ https://api.edamam.com/search?q={query}n&app_id={appId}&app_key={appKey}
 
 
 #### 2.5 Melakukan request di activity
-1. Setelah semuanya di inisiasi, selanjutnya adalah menggunakan fungsi getRecipe yang telah kita buat di kelas ApiInterface.java . Bukalah activity kalian dan panggil fungsi getRecipe di fungsi loadData() yang telah kita buat sebelumnya seperti dibawah
+1. Setelah semuanya di inisiasi, selanjutnya adalah menggunakan fungsi getRecipe yang telah kalian buat di kelas ApiInterface.java . Bukalah activity kalian dan panggil fungsi getRecipe di fungsi loadData() yang telah kalian buat sebelumnya seperti dibawah
 
 ```java
     private void loadData(){
