@@ -319,4 +319,4 @@ https://api.edamam.com/search?q={query}n&app_id={appId}&app_key={appKey}
 
 2. Apabila kode kalian benar, maka tampilan akhir akan muncul seperti ini
 
-![alt text](https://i.imgur.com/FP6QRe0.png)
+![alt text](https://github.com/MobileInnovationLab/studygroup-2018/blob/master/Modul%204%20HTTP%20Request/Screenshot_2018-11-23-01-29-46-27.png)
