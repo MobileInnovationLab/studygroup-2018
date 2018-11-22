@@ -201,6 +201,9 @@ Retrofit adalah salah satu library yang dapat digunakan untuk melakukan HTTP Req
 Disini kalian akan menggunakan Retrofit dengan GSON Converter
 GSON Converter digunakan untuk mengubah json menjadi sebuah objek Java untuk mempermudah
 
+![alt text](https://github.com/MobileInnovationLab/studygroup-2018/blob/master/Modul%204%20HTTP%20Request/json_notation.png)
+
+
 #### 2.1 Tambahkan dependecy Retrofit dan GSON ke app.gradle(Module:app) kalian
 ```java
     implementation 'com.google.code.gson:gson:2.6.2'
